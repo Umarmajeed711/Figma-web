@@ -1,11 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
 
-
+:root{
+     --green:#B9FF66;
+     --dark:#191A23;
+     --black:#000000;
+     --gray:#F3F3F3;
+    
+}
 
 
 body{
     font-family: "Space Grotesk", sans-serif;
+    list-style: none;
+    text-decoration: none;
+    overflow-x: hidden;
 }
 
 
@@ -24,7 +33,7 @@ body{
 }
 .mynav li a{
     text-decoration: none;
-    color: black;
+    color: var(--dark);
 }
 h1{
 font-family: "Space Grotesk", sans-serif;
@@ -43,17 +52,17 @@ font-size: 60px;
    padding: 2px 30px ;
    border-radius:14px;
    background-color: 
-   #191A23;
+   var(--dark);
    color: white;
    line-height:28px ;
    font-family: "Space Grotesk", sans-serif;
    
 }
 .button:hover,.button:active{
-    background-color:  #B9FF66;
+    background-color: var(--green);
     transition: all .5s;
-    color: black;
-    border-color: #B9FF66;
+    color: var(--dark);
+    border-color: var(--green);
 }
 
 .sponser img{
@@ -71,11 +80,107 @@ font-size: 60px;
     font-size: 18px;
     flex-wrap: wrap;
     width: 60%;
-    align-content: first baseline;
+    align-content: center;
 }
 
 .cards{
     border: 1px solid black;
     border-radius: 45px;
     padding: 50px;
+    background-color: var(--green);
 }
+
+.also{
+    background-color:var(--gray);
+    border-radius: 20px;
+    border: 1px solid black;
+    border-bottom: 2px solid black;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+.also:active, .also:hover{
+    background-color:var(--green);
+}
+
+.form{
+    background-color:var(--gray);
+    border-radius: 45px;
+}
+.heading2{
+    background-color: var(--green);
+}
+
+
+.plus{
+    display: flex !important;
+    justify-content:space-between !important;
+    flex-wrap: nowrap; 
+    align-content: center;}
+
+.drop{
+    background-color: var(--gray);
+    transition: all .3s;
+    color: var(--dark);
+    font-size: 20px;
+    padding: 5px;
+    border: 1px solid black; 
+    border-radius: 50%;
+}    
+
+.star{
+    background-color: var(--gray);
+    border-radius: 45px;
+}
+
+.input{
+    border-radius: 10px;
+}
+
+
+.foot{
+    background-color: var(--dark);
+    border-radius:45px ;
+    color: white;
+    
+}
+.foot a{
+    text-decoration: none;
+    color: white;
+}
+
+.contact{
+    border-radius: 7px;
+     padding: 5px 10px;
+     background-color: var(--green);
+     color: var(--dark);
+}
+.sub{
+    background-color: #292A32;
+    border-radius: 10px;
+}
+.subbor{
+    border:2px solid var(--gray);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.subbor:hover , .subbor:active{
+    border:2px solid var(--green);
+    box-shadow: 0px 0px 5px var(--gray);
+   
+}
+
+.subbtn{
+    border: none;
+    padding: 7px;
+    background-color: #292A32;
+    color:#F3F3F3;
+    cursor: pointer;
+}
+.subbtn:hover ,.subbtn:active{
+    color:var(--green)
+}
+
+/* .drop:hover,.drop:active{
+    background-color: var(--green);
+} */
